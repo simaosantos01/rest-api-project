@@ -12,9 +12,9 @@ basexhttp.bat
 | ------ | -------- |---------- | ------------ | ------- |
 | GET | http://localhost:8984/getSchedules | Returns all the schedules. | n.a.| default |
 | GET | http://localhost:8984/export | Exports all the schedules to ./export as .json files. | n.a.| default |
-| GET | http://localhost:8984/getAvailableSlotsInTimeInterval | Returns all the free slots between a time interval. | startDate=YYYY-MM-dd and finishDate=YYYY-MM-dd| default. |
+| GET | http://localhost:8984/getAvailableSlotsInTimeInterval | Returns all the free slots between a time interval. | startDate=YYYY-MM-dd and finishDate=YYYY-MM-dd| default |
 | POST | http://localhost:8984/add | Adds an Schedule if valid and possible attending to the preference dates. | n.a.| Content-Type = application/xml |
-| DEL | http://localhost:8984/cancelSchedule | Cancels a schedule. | id=SCHEDULE_ID_# | deafault |
+| DEL | http://localhost:8984/cancelSchedule | Cancels a schedule. | id=SCHEDULE_ID_# | default |
 
 ### Importing to mongo
 **Before excuting the following process** be aware that all the .json files inside the ./export folder will be imported to mongo, wich  implies the method "http://localhost:8984/export" being called firstly.
